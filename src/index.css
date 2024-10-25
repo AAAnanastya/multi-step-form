@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 /* ------------ Typography ------------ */
 
 @font-face {
@@ -36,4 +31,22 @@ body {
   --color-magnolia: hsl(217, 100%, 97%);
   --color-alabaster: hsl(231, 100%, 99%);
   --color-white: hsl(0, 0%, 100%);
+}
+
+/* ------------ Layout ------------ */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: var(--color-magnolia);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

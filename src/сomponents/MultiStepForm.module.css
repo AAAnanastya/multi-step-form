@@ -1,0 +1,56 @@
+.adaptive-container {
+  display: grid;
+  background-color: var(--color-white);
+}
+
+.form,
+.checkout {
+  background-color: var(--color-white);
+}
+
+/* ------------ Phone and portrait tablets adaptive ------------ */
+@media (max-width: 768px) {
+  .adaptive-container {
+    grid-template-rows: 25% auto 10%;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+  }
+
+  .form {
+    grid-row: 2;
+    position: absolute;
+    top: 285px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 24rem;
+    width: 90%;
+  }
+
+  .checkout {
+    grid-row: 3;
+  }
+}
+
+/* ------------ Tablets and desktop adaptive ------------ */
+@media (min-width: 769px) {
+  .adaptive-container {
+    grid-template-columns: 240px auto;
+    grid-template-rows: auto 80px;
+    gap: 10px;
+    width: 55rem;
+    height: 33rem;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .form {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .checkout {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
