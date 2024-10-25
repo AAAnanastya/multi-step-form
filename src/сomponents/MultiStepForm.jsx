@@ -1,4 +1,5 @@
 import FormInputField from './Form/FormInputField';
+import FormNavigation from './FormNavigation/FormNavigation';
 import styles from './MultiStepForm.module.css';
 import Sidebar from './Sidebar/Sidebar';
 
@@ -7,7 +8,7 @@ export default function MultiStepForm() {
     <div className={styles['adaptive-container']}>
       <Sidebar />
       <FormInputField />
-      <div className={styles.checkout}></div>
+      <FormNavigation />
     </div>
   );
 }

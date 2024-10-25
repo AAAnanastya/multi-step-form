@@ -22,7 +22,9 @@
 
 :root {
   --color-marine-blue: hsl(213, 96%, 18%);
+  --color-light-marine: hsl(213, 71%, 30%);
   --color-purplish-blue: hsl(243, 100%, 62%);
+  --color-light-purplish: hsl(243, 89%, 68%);
   --color-pastel-blue: hsl(228, 100%, 84%);
   --color-light-blue: hsl(206, 94%, 87%);
   --color-strawberry-red: hsl(354, 84%, 57%);

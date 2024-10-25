@@ -1,0 +1,42 @@
+.nav-button {
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  height: 40px;
+  width: 110px;
+  border-radius: 6px;
+  border: none;
+}
+
+.forward {
+  background-color: var(--color-marine-blue);
+  color: var(--color-alabaster);
+  transition: background-color 0.3s ease;
+}
+
+.forward:hover {
+  background-color: var(--color-light-marine);
+  cursor: pointer;
+}
+
+.backward {
+  width: max-content;
+  background-color: transparent;
+  color: var(--color-cool-gray);
+  transition: color 0.3s ease;
+}
+
+.backward:hover {
+  color: var(--color-marine-blue);
+  cursor: pointer;
+}
+
+.confirmation {
+  background-color: var(--color-purplish-blue);
+  color: var(--color-alabaster);
+  transition: background-color 0.3s ease;
+}
+
+.confirmation:hover {
+  background-color: var(--color-light-purplish);
+  cursor: pointer;
+}

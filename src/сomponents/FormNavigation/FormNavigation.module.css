@@ -1,0 +1,23 @@
+.navigation {
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ------------ Phone and portrait tablets adaptive ------------ */
+@media (max-width: 768px) {
+  .navigation {
+    grid-row: 3;
+    padding: 0 22px;
+  }
+}
+
+/* ------------ Tablets and desktop adaptive ------------ */
+@media (min-width: 769px) {
+  .navigation {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 0 90px 0;
+  }
+}
