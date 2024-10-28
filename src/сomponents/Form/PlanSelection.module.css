@@ -1,0 +1,28 @@
+.plans {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 0;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: auto;
+  height: 40px;
+  border-radius: 8px;
+  background-color: var(--color-alabaster);
+}
+
+.toggle-container p {
+  font-family: 'Ubuntu';
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-cool-gray);
+  transition: color 0.3s ease;
+}
+
+.toggle-container p.selected {
+  color: var(--color-marine-blue);
+}

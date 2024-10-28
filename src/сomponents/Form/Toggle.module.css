@@ -1,0 +1,25 @@
+.toggle-btn {
+  position: relative;
+  width: 35px;
+  height: 18px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: var(--color-marine-blue);
+  cursor: pointer;
+}
+
+.toggle-btn .thumb {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  transition: left 0.15s ease;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggle-btn.toggled .thumb {
+  left: calc(50px - 30px);
+}

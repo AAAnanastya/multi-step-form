@@ -2,7 +2,7 @@
 @media (max-width: 768px) {
   .sidebar {
     grid-row: 1;
-    background: url('../../../public/assets/images/bg-sidebar-mobile.svg');
+    background: url('../../images/bg-sidebar-mobile.svg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@
     grid-column: 1;
     grid-row: 1 / span 2;
     border-radius: 10px;
-    background: url('../../../public/assets/images/bg-sidebar-desktop.svg');
+    background: url('../../images/bg-sidebar-desktop.svg');
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
