@@ -2,9 +2,9 @@ import { useState } from 'react';
 
 import PlanItem from './PlanItem';
 import styles from './PlanSelection.module.css';
-import ArcadeImg from '../../images/icon-arcade.svg';
-import AdvancedImg from '../../images/icon-advanced.svg';
-import ProImg from '../../images/icon-pro.svg';
+import ArcadeImg from '../../../images/icon-arcade.svg';
+import AdvancedImg from '../../../images/icon-advanced.svg';
+import ProImg from '../../../images/icon-pro.svg';
 import Toggle from './Toggle';
 
 const PLAN_PRICES = {

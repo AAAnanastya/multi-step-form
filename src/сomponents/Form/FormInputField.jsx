@@ -1,6 +1,6 @@
 import styles from './FormInputField.module.css';
-import PersonalInfoInput from './PersonalInfoInput';
-import PlanSelection from './PlanSelection';
+// import PersonalInfoInput from './PersonalInfo/PersonalInfoInput';
+import PlanSelection from './PlanSelection/PlanSelection';
 
 export default function FormInputField() {
   return (
