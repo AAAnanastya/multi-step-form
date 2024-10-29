@@ -1,0 +1,85 @@
+.add-ons-item {
+  height: 68px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--color-light-gray);
+  background-color: var(--color-white);
+  transition: border 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.add-ons-item:hover {
+  border: 1px solid var(--color-purplish-blue);
+}
+
+.selected {
+  border: 1px solid var(--color-purplish-blue);
+  background-color: var(--color-alabaster);
+}
+
+.checkmark {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  border: 1px solid var(--color-light-gray);
+  position: relative;
+  margin-right: 20px;
+}
+
+.add-ons-item.selected .checkmark {
+  background-color: var(--color-purplish-blue);
+  border: 1px solid var(--color-purplish-blue);
+}
+
+.add-ons-item.selected .checkmark::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 5px;
+  background-color: var(--color-alabaster);
+  top: 7px;
+  left: 4px;
+  transform: rotate(-45deg);
+}
+
+.add-ons-item.selected .checkmark::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background-color: var(--color-alabaster);
+  top: 3px;
+  left: 8px;
+  transform: rotate(45deg);
+}
+
+.add-ons-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.add-ons-description h3 {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-marine-blue);
+}
+
+.add-ons-description p {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-cool-gray);
+}
+
+.pricing {
+  margin-left: auto;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-purplish-blue);
+}
