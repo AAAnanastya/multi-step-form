@@ -17,10 +17,36 @@
   border-radius: 5px;
   border: 1px solid var(--color-light-gray);
   color: var(--color-marine-blue);
+  transition: border 0.15s ease;
+}
+
+.form-input-field input:focus {
+  border: 1px solid var(--color-purplish-blue);
+  cursor: pointer;
+  outline: none;
+}
+.form-input-field input:hover {
+  border: 1px solid var(--color-purplish-blue);
+  cursor: pointer;
 }
 
 .form-input-field input::placeholder {
   color: var(--color-cool-gray);
+}
+
+.input-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-label p {
+  font-family: 'Ubuntu';
+  font-size: 12px;
+  color: var(--color-strawberry-red);
+}
+
+.form-input-field input.invalid {
+  border: 1px solid var(--color-strawberry-red);
 }
 
 /* ------------ Phone and portrait tablets adaptive ------------ */
