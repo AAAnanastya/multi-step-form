@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.singleButton {
+  justify-content: flex-end;
+}
+
 /* ------------ Phone and portrait tablets adaptive ------------ */
 @media (max-width: 768px) {
   .navigation {

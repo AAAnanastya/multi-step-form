@@ -1,16 +1,24 @@
-import AddOnsSelection from './AddOnsSelection/AddOnsSelection';
 import styles from './FormInputField.module.css';
-// import PersonalInfoInput from './PersonalInfo/PersonalInfoInput';
-// import PlanSelection from './PlanSelection/PlanSelection';
+import PersonalInfoInput from './PersonalInfo/PersonalInfoInput';
+import PlanSelection from './PlanSelection/PlanSelection';
+import AddOnsSelection from './AddOnsSelection/AddOnsSelection';
 
-export default function FormInputField() {
+export default function FormInputField({ step }) {
   return (
     <div className={styles.form}>
-      <h1 className={styles.title}>Personal info</h1>
-      <h2 className={styles.subtitle}>Please provide your name, email address and phone number.</h2>
-      {/* <PersonalInfoInput /> */}
-      {/* <PlanSelection /> */}
-      <AddOnsSelection />
+      <h1 className={styles.title}>
+        {step === 1 && 'Personal info'}
+        {step === 2 && 'Select your plan'}
+        {step === 3 && 'Pick add-ons'}
+      </h1>
+      <h2 className={styles.subtitle}>
+        {step === 1 && 'Please provide your name, email address and phone number.'}
+        {step === 2 && 'You have the option of monthly or yearly billing.'}
+        {step === 3 && 'Add-ons help enhance your gaming experience.'}
+      </h2>
+      {step === 1 && <PersonalInfoInput />}
+      {step === 2 && <PlanSelection />}
+      {step === 3 && <AddOnsSelection />}
     </div>
   );
 }

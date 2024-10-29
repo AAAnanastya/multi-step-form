@@ -1,13 +1,13 @@
 import SidebarItem from './SidebarItem';
 import styles from './Sidebar.module.css';
 
-export default function Sidebar() {
+export default function Sidebar({ step }) {
   return (
     <div className={styles.sidebar}>
-      <SidebarItem id="1" title="Your info" />
-      <SidebarItem id="2" title="Select plan" />
-      <SidebarItem id="3" title="Add-ons" />
-      <SidebarItem id="4" title="Summary" />
+      <SidebarItem step={step} id={1} title="Your info" />
+      <SidebarItem step={step} id={2} title="Select plan" />
+      <SidebarItem step={step} id={3} title="Add-ons" />
+      <SidebarItem step={step} id={4} title="Summary" />
     </div>
   );
 }

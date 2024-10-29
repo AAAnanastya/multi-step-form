@@ -1,13 +1,20 @@
 import NavigationButton from './NavigationButton';
 import styles from './FormNavigation.module.css';
 
-export default function FormNavigation() {
+export default function FormNavigation({ step, onForward, onBackward }) {
   return (
-    <div className={styles.navigation}>
-      {/* backward не отображается на первом шаге */}
-      <NavigationButton type="backward">Go Back</NavigationButton>
-      {/* forward на последнем шаге заменяется на confirm */}
-      <NavigationButton type="forward">Next Step</NavigationButton>
+    <div className={`${styles.navigation} ${step === 1 ? styles.singleButton : ''}`}>
+      {step !== 1 && (
+        <NavigationButton type="backward" onClick={onBackward}>
+          Go Back
+        </NavigationButton>
+      )}
+      {step !== 4 && (
+        <NavigationButton type="forward" onClick={onForward}>
+          Next Step
+        </NavigationButton>
+      )}
+      {step === 4 && <NavigationButton type="confirmation">Submit</NavigationButton>}
     </div>
   );
 }
