@@ -1,7 +1,8 @@
 import styles from './SidebarItem.module.css';
 
-export default function SidebarItem({ step, id, title }) {
-  const active = step === id;
+export default function SidebarItem({ step, id, finalStep, title }) {
+  const active = step === id || finalStep;
+
   return (
     <div className={styles['sidebar-item']}>
       <button className={`${styles['step-pointer']} ${active ? styles.active : ''}`}>{id}</button>

@@ -3,6 +3,7 @@ import FormInputField from './Form/FormInputField';
 import FormNavigation from './FormNavigation/FormNavigation';
 import styles from './MultiStepForm.module.css';
 import Sidebar from './Sidebar/Sidebar';
+import ConfirmationScreen from './Form/Summary/ConfirmationScreen';
 
 export default function MultiStepForm() {
   const [step, setStep] = useState(1);
@@ -57,7 +58,7 @@ export default function MultiStepForm() {
     return errors;
   }
 
-  const handleInputChange = (field, value) => {
+  function handleInputChange(field, value) {
     if (field === 'addOns') {
       setFormData((prevData) => ({
         ...prevData,
@@ -67,19 +68,29 @@ export default function MultiStepForm() {
       setFormData((prevData) => ({ ...prevData, [field]: value }));
     }
     setErrors((prevErrors) => ({ ...prevErrors, [field]: undefined }));
-  };
+  }
+
+  function formHandleSubmit() {
+    setStep(5);
+    console.log(formData);
+  }
 
   return (
     <div className={styles['adaptive-container']}>
       <Sidebar step={step} />
-      <FormInputField
-        step={step}
-        formData={formData}
-        onInputChange={handleInputChange}
-        toPlanChanger={handleBackToPlanChanger}
-        errors={errors}
-      />
-      <FormNavigation step={step} onForward={handleStepForward} onBackward={handleStepBackward} />
+      {step !== 5 && (
+        <FormInputField
+          step={step}
+          formData={formData}
+          onInputChange={handleInputChange}
+          toPlanChanger={handleBackToPlanChanger}
+          errors={errors}
+        />
+      )}
+      {step === 5 && <ConfirmationScreen />}
+      {step !== 5 && (
+        <FormNavigation step={step} onForward={handleStepForward} onBackward={handleStepBackward} onSubmit={formHandleSubmit} />
+      )}
     </div>
   );
 }

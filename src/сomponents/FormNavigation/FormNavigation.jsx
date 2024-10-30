@@ -1,7 +1,7 @@
 import NavigationButton from './NavigationButton';
 import styles from './FormNavigation.module.css';
 
-export default function FormNavigation({ step, onForward, onBackward }) {
+export default function FormNavigation({ step, onForward, onBackward, onSubmit }) {
   return (
     <div className={`${styles.navigation} ${step === 1 ? styles.singleButton : ''}`}>
       {step !== 1 && (
@@ -14,7 +14,11 @@ export default function FormNavigation({ step, onForward, onBackward }) {
           Next Step
         </NavigationButton>
       )}
-      {step === 4 && <NavigationButton type="confirmation">Submit</NavigationButton>}
+      {step === 4 && (
+        <NavigationButton type="confirmation" onClick={onSubmit}>
+          Confirm
+        </NavigationButton>
+      )}
     </div>
   );
 }
