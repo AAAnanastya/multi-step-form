@@ -11,10 +11,10 @@ export default function MultiStepForm() {
     email: '',
     phone: '',
     billingPeriod: 'monthly',
-    plan: { name: '', price: '' },
-    addOns: { name: '', price: '' },
-    totalPrice: '',
+    plan: { name: 'Arcade', price: '9' },
+    addOns: [],
   });
+
   const [errors, setErrors] = useState({});
 
   function handleStepForward() {
@@ -54,7 +54,14 @@ export default function MultiStepForm() {
   }
 
   const handleInputChange = (field, value) => {
-    setFormData((prevData) => ({ ...prevData, [field]: value }));
+    if (field === 'addOns') {
+      setFormData((prevData) => ({
+        ...prevData,
+        addOns: value,
+      }));
+    } else {
+      setFormData((prevData) => ({ ...prevData, [field]: value }));
+    }
     setErrors((prevErrors) => ({ ...prevErrors, [field]: undefined }));
   };
 

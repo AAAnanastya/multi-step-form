@@ -8,13 +8,14 @@ import ProImg from '../../../images/icon-pro.svg';
 import Toggle from './Toggle';
 
 export default function PlanSelection({ formData, planVariables, onChange }) {
-  const [selectedPlan, setSelectedPlan] = useState(null);
+  const [selectedPlan, setSelectedPlan] = useState(formData.plan.name);
 
   let period = formData.billingPeriod;
 
   const [toggled, setToggled] = useState(period);
 
   function handleSelectPlan(planName) {
+    onChange('plan', { name: planName, price: planVariables[planName] });
     setSelectedPlan(planName);
   }
 
@@ -35,7 +36,7 @@ export default function PlanSelection({ formData, planVariables, onChange }) {
             price={price}
             billing={period}
             isSelected={selectedPlan === planName}
-            onSelect={handleSelectPlan}
+            onSelect={() => handleSelectPlan(planName)}
           />
         ))}
       </div>

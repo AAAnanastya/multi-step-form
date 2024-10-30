@@ -28,7 +28,7 @@ export default function FormInputField({ step, formData, onInputChange, errors }
       </h2>
       {step === 1 && <PersonalInfoInput formData={formData} onInputChange={onInputChange} errors={errors} />}
       {step === 2 && <PlanSelection formData={formData} planVariables={SERVICES.plans} onChange={onInputChange} />}
-      {step === 3 && <AddOnsSelection formData={formData} addOnsVariables={SERVICES.addOns} />}
+      {step === 3 && <AddOnsSelection formData={formData} addOnsVariables={SERVICES.addOns} onChange={onInputChange} />}
     </div>
   );
 }

@@ -2,13 +2,16 @@ import { useState } from 'react';
 
 import styles from './AddOnsItem.module.css';
 
-export default function AddOnsItem({ name, description, price, billing }) {
-  const [selected, setSelected] = useState(false);
+export default function AddOnsItem({ name, description, price, billing, onSelect, isSelected }) {
+  const [selected, setSelected] = useState(isSelected);
 
   const displayPrice = billing === 'yearly' ? price * 10 : price;
   const periodLabel = billing === 'monthly' ? 'mo' : 'yr';
 
-  const handleSelector = () => setSelected(!selected);
+  function handleSelector() {
+    onSelect();
+    setSelected(!selected);
+  }
 
   return (
     <button className={`${styles['add-ons-item']} ${selected ? styles.selected : ''}`} onClick={handleSelector}>
