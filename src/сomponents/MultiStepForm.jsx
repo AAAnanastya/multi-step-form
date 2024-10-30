@@ -33,6 +33,10 @@ export default function MultiStepForm() {
     setStep((prevStep) => prevStep - 1);
   }
 
+  function handleBackToPlanChanger() {
+    setStep(2);
+  }
+
   function validatePersonalInfo(data) {
     const errors = {};
     if (!data.name) {
@@ -68,7 +72,13 @@ export default function MultiStepForm() {
   return (
     <div className={styles['adaptive-container']}>
       <Sidebar step={step} />
-      <FormInputField step={step} formData={formData} onInputChange={handleInputChange} errors={errors} />
+      <FormInputField
+        step={step}
+        formData={formData}
+        onInputChange={handleInputChange}
+        toPlanChanger={handleBackToPlanChanger}
+        errors={errors}
+      />
       <FormNavigation step={step} onForward={handleStepForward} onBackward={handleStepBackward} />
     </div>
   );
