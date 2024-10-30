@@ -33,7 +33,7 @@ export default function MultiStepForm() {
     const errors = {};
     if (!data.name) {
       errors.name = 'This field is required';
-    } else if (!/^(?=.{3,30}$)[A-Za-zА-Яа-яЁё][A-Za-zА-Яа-яЁё_.-]*$/.test(data.name)) {
+    } else if (!/^(?=.{3,30}$)[A-Za-zА-Яа-яЁё][A-Za-zА-Яа-яЁё\s.-]*$/.test(data.name)) {
       errors.name = 'Please enter your name';
     }
     if (!data.email) {
