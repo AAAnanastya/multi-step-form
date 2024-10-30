@@ -3,6 +3,16 @@ import PersonalInfoInput from './PersonalInfo/PersonalInfoInput';
 import PlanSelection from './PlanSelection/PlanSelection';
 import AddOnsSelection from './AddOnsSelection/AddOnsSelection';
 
+const SERVICES = {
+  plans: { Arcade: 9, Advanced: 12, Pro: 15 },
+
+  addOns: {
+    'Online service': { description: 'Access to multiplayer games', price: 1 },
+    'Larger storage': { description: 'Extra 1TB of cloud save', price: 2 },
+    'Customizable profile': { description: 'Custom theme on your profile', price: 2 },
+  },
+};
+
 export default function FormInputField({ step, formData, onInputChange, errors }) {
   return (
     <div className={styles.form}>
@@ -17,8 +27,8 @@ export default function FormInputField({ step, formData, onInputChange, errors }
         {step === 3 && 'Add-ons help enhance your gaming experience.'}
       </h2>
       {step === 1 && <PersonalInfoInput formData={formData} onInputChange={onInputChange} errors={errors} />}
-      {step === 2 && <PlanSelection />}
-      {step === 3 && <AddOnsSelection />}
+      {step === 2 && <PlanSelection formData={formData} planVariables={SERVICES.plans} onChange={onInputChange} />}
+      {step === 3 && <AddOnsSelection formData={formData} addOnsVariables={SERVICES.addOns} />}
     </div>
   );
 }

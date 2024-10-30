@@ -5,6 +5,9 @@ import styles from './AddOnsItem.module.css';
 export default function AddOnsItem({ name, description, price, billing }) {
   const [selected, setSelected] = useState(false);
 
+  const displayPrice = billing === 'yearly' ? price * 10 : price;
+  const periodLabel = billing === 'monthly' ? 'mo' : 'yr';
+
   const handleSelector = () => setSelected(!selected);
 
   return (
@@ -15,7 +18,7 @@ export default function AddOnsItem({ name, description, price, billing }) {
         <p>{description}</p>
       </div>
       <p className={styles.pricing}>
-        +${price}/{billing}
+        +${displayPrice}/{periodLabel}
       </p>
     </button>
   );

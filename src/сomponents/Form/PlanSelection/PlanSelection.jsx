@@ -7,58 +7,43 @@ import AdvancedImg from '../../../images/icon-advanced.svg';
 import ProImg from '../../../images/icon-pro.svg';
 import Toggle from './Toggle';
 
-const PLAN_PRICES = {
-  Arcade: 9,
-  Advanced: 12,
-  Pro: 15,
-};
-
-export default function PlanSelection() {
+export default function PlanSelection({ formData, planVariables, onChange }) {
   const [selectedPlan, setSelectedPlan] = useState(null);
-  const [toggled, setToggled] = useState(false);
 
-  const period = toggled ? 'yearly' : 'monthly';
+  let period = formData.billingPeriod;
+
+  const [toggled, setToggled] = useState(period);
 
   function handleSelectPlan(planName) {
     setSelectedPlan(planName);
   }
 
   function toggleSwitcher() {
-    setToggled(!toggled);
+    const newPeriod = period === 'monthly' ? 'yearly' : 'monthly';
+    setToggled(newPeriod);
+    onChange('billingPeriod', newPeriod);
   }
 
   return (
     <>
       <div className={styles.plans}>
-        <PlanItem
-          img={ArcadeImg}
-          planName="Arcade"
-          price={PLAN_PRICES.Arcade}
-          billing={period}
-          isSelected={selectedPlan === 'Arcade'}
-          onSelect={handleSelectPlan}
-        />
-        <PlanItem
-          img={AdvancedImg}
-          planName="Advanced"
-          price={PLAN_PRICES.Advanced}
-          billing={period}
-          isSelected={selectedPlan === 'Advanced'}
-          onSelect={handleSelectPlan}
-        />
-        <PlanItem
-          img={ProImg}
-          planName="Pro"
-          price={PLAN_PRICES.Pro}
-          billing={period}
-          isSelected={selectedPlan === 'Pro'}
-          onSelect={handleSelectPlan}
-        />
+        {Object.entries(planVariables).map(([planName, price]) => (
+          <PlanItem
+            key={planName}
+            img={planName === 'Arcade' ? ArcadeImg : planName === 'Advanced' ? AdvancedImg : ProImg}
+            planName={planName}
+            price={price}
+            billing={period}
+            isSelected={selectedPlan === planName}
+            onSelect={handleSelectPlan}
+          />
+        ))}
       </div>
+
       <div className={styles['toggle-container']}>
-        <p className={!toggled ? styles.selected : ''}>Monthly</p>
-        <Toggle toggled={toggled} onClick={toggleSwitcher} />
-        <p className={toggled ? styles.selected : ''}>Yearly</p>
+        <p className={toggled === 'monthly' ? styles.selected : ''}>Monthly</p>
+        <Toggle toggled={toggled === 'yearly'} onClick={toggleSwitcher} />
+        <p className={toggled === 'yearly' ? styles.selected : ''}>Yearly</p>
       </div>
     </>
   );

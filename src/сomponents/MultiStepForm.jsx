@@ -10,6 +10,10 @@ export default function MultiStepForm() {
     name: '',
     email: '',
     phone: '',
+    billingPeriod: 'monthly',
+    plan: { name: '', price: '' },
+    addOns: { name: '', price: '' },
+    totalPrice: '',
   });
   const [errors, setErrors] = useState({});
 
