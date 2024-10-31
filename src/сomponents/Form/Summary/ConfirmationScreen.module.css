@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: flex-end;
   gap: 15px;
-  padding-bottom: 8%;
 }
 
 .final-box img {
@@ -15,15 +14,57 @@
 .final-box h1 {
   font-family: 'Ubuntu';
   font-weight: 700;
-  font-size: 30px;
   color: var(--color-marine-blue);
 }
 
 .final-box p {
-  width: 420px;
   text-align: center;
   font-family: 'Ubuntu';
   font-size: 15px;
   line-height: 150%;
   color: var(--color-cool-gray);
+}
+
+/* ------------ Phone and portrait tablets adaptive ------------ */
+@media (max-width: 768px) {
+  .final-box {
+    grid-row: 2;
+    position: absolute;
+    top: 94px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: max-content;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    padding: 70px 30px;
+    background-color: var(--color-white);
+  }
+
+  .final-box img {
+    height: 60px;
+  }
+
+  .final-box h1 {
+    font-size: 26px;
+  }
+}
+
+/* ------------ Tablets and desktop adaptive ------------ */
+@media (min-width: 769px) {
+  .final-box {
+    padding-bottom: 8%;
+  }
+
+  .final-box img {
+    height: 75px;
+  }
+
+  .final-box h1 {
+    font-size: 30px;
+  }
+
+  .final-box p {
+    width: 420px;
+  }
 }

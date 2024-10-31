@@ -1,7 +1,6 @@
 .plans {
   display: flex;
   justify-content: space-between;
-  margin: 35px 0;
 }
 
 .toggle-container {
@@ -25,4 +24,20 @@
 
 .toggle-container p.selected {
   color: var(--color-marine-blue);
+}
+
+/* ------------ Phone and portrait tablets adaptive ------------ */
+@media (max-width: 768px) {
+  .plans {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+}
+
+/* ------------ Tablets and desktop adaptive ------------ */
+@media (min-width: 769px) {
+  .plans {
+    margin: 35px 0;
+  }
 }

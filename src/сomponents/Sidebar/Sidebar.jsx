@@ -7,7 +7,7 @@ export default function Sidebar({ step }) {
       <SidebarItem step={step} id={1} title="Your info" />
       <SidebarItem step={step} id={2} title="Select plan" />
       <SidebarItem step={step} id={3} title="Add-ons" />
-      <SidebarItem step={step} id={4} finalStep={true} title="Summary" />
+      <SidebarItem step={step} id={4} finalStep={step === 5} title="Summary" />
     </div>
   );
 }
