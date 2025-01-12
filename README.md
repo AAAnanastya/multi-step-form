@@ -23,14 +23,16 @@
 ## Скриншоты
 
 #### Desktop
-<img src="https://github.com/AAAnanastya/space-travel-website/blob/main/Preview/Desktop/desk_1.png" height="300" alt="1"> <img src="https://github.com/AAAnanastya/space-travel-website/raw/mainPreview/Desktop/desk_1_active.png" height="300" alt="1_active">
+<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_1.png" height="200" alt="1"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_1_active.png" height="200" alt="1_active">
 
-<img src="https://github.com/AAAnanastya/space-travel-website/blob/main/Preview/Desktop/desk_2_m.png" height="300" alt="2"> <img src="https://github.com/AAAnanastya/space-travel-website/raw/mainPreview/Desktop/desk_2_y.png" height="300" alt="2.2">
+<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_2_m.png" height="200" alt="2"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_2_y.png" height="200" alt="2.2">
 
-<img src="https://github.com/AAAnanastya/space-travel-website/blob/main/Preview/Desktop/desk_3.png" height="300" alt="3"> <img src="https://github.com/AAAnanastya/space-travel-website/raw/mainPreview/Desktop/desk_3_active.png" height="300" alt="3_active">
+<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_3.png" height="200" alt="3"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_3_active.png" height="200" alt="3_active">
 
-<img src="https://github.com/AAAnanastya/space-travel-website/blob/main/Preview/Desktop/desk_4.png" height="300" alt="4"> <img src="https://github.com/AAAnanastya/space-travel-website/raw/mainPreview/Desktop/desk_sum.png" height="300" alt="4_active">
+<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_4.png" height="200" alt="4"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_sum.png" height="200" alt="4_active">
 
 #### Mobile
 
-<img src="https://github.com/AAAnanastya/space-travel-website/blob/main/Preview/Mobile/mob_1.png" width="200" alt="1"> <img src="https://github.com/AAAnanastya/space-travel-website/blob/main/Preview/Mobile/mob_2.png" width="200" alt="2"> <img src="https://github.com/AAAnanastya/space-travel-website/blob/main/Preview/Mobile/mob_3.png" width="200" alt="3"> <img src="https://github.com/AAAnanastya/space-travel-website/blob/main/Preview/Mobile/mob_4.png" width="200" alt="4">
+<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Mobile/mob_1.png" width="200" alt="1"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Mobile/mob_2.png" width="200" alt="2">
+
+<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Mobile/mob_3.png" width="200" alt="3"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Mobile/mob_4.png" width="200" alt="4">
