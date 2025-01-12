@@ -33,6 +33,4 @@
 
 #### Mobile
 
-<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Mobile/mob_1.png" width="200" alt="1"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Mobile/mob_2.png" width="200" alt="2">
-
-<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Mobile/mob_3.png" width="200" alt="3"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Mobile/mob_4.png" width="200" alt="4">
+<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Mobile/mob_1.png" width="160" alt="1"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Mobile/mob_2.png" width="160" alt="2"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Mobile/mob_3.png" width="160" alt="3"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Mobile/mob_4.png" width="160" alt="4">
