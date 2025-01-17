@@ -14,8 +14,8 @@
 ## Реализация
 
 Создано с использованием:
--   Семантической разметки HTML5
--   Пользовательских свойств CSS
+-   HTML5
+-   CSS3
 -   JavaScript + React
 
 На данном этапе данные никуда не отправляются, только выводятся в консоль при нажатии кнопки подтверждения заказа.
@@ -23,13 +23,13 @@
 ## Скриншоты
 
 #### Desktop
-<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_1.png" height="200" alt="1"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_1_active.png" height="200" alt="1_active">
+<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_1.jpeg" height="200" alt="1"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_1_active.jpeg" height="200" alt="1_active">
 
-<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_2_m.png" height="200" alt="2"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_2_y.png" height="200" alt="2.2">
+<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_2_m.jpeg" height="200" alt="2"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_2_y.jpeg" height="200" alt="2.2">
 
-<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_3.png" height="200" alt="3"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_3_active.png" height="200" alt="3_active">
+<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_3.jpeg" height="200" alt="3"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_3_active.jpeg" height="200" alt="3_active">
 
-<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_4.png" height="200" alt="4"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_sum.png" height="200" alt="4_active">
+<img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_4.jpeg" height="200" alt="4"> <img src="https://github.com/AAAnanastya/multi-step-form/raw/main/Preview/Desktop/desk_sum.jpeg" height="200" alt="4_active">
 
 #### Mobile
 
